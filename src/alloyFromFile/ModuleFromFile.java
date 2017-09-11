@@ -1,4 +1,4 @@
-package alloyToXML;
+package alloyFromFile;
 
 import edu.mit.csail.sdg.alloy4.A4Reporter;
 import edu.mit.csail.sdg.alloy4.Err;
