@@ -1,6 +1,7 @@
 package alloyFromFile;
 
 import edu.mit.csail.sdg.alloy4.A4Reporter;
+import edu.mit.csail.sdg.alloy4.ConstList;
 import edu.mit.csail.sdg.alloy4.Err;
 import edu.mit.csail.sdg.alloy4compiler.ast.Command;
 import edu.mit.csail.sdg.alloy4compiler.parser.CompModule;
@@ -9,7 +10,7 @@ import edu.mit.csail.sdg.alloy4compiler.translator.A4Options;
 import edu.mit.csail.sdg.alloy4compiler.translator.A4Solution;
 import edu.mit.csail.sdg.alloy4compiler.translator.TranslateAlloyToKodkod;
 
-public class ModuleFromFile {
+public class ExampleUsingTheAPI {
 
 	public static void loadModule(String fileName) {
 
