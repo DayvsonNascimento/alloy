@@ -1,0 +1,181 @@
+<alloy builddate="2012-09-25 15:54 EDT">
+
+<instance bitwidth="15" maxseq="15" command="Run  for 15 but 15 int, 15 seq" filename="">
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+</sig>
+
+<sig label="this/Pizzaria" ID="4" parentID="2">
+   <atom label="Pizzaria$0"/>
+   <atom label="Pizzaria$1"/>
+   <atom label="Pizzaria$2"/>
+   <atom label="Pizzaria$3"/>
+   <atom label="Pizzaria$4"/>
+</sig>
+
+<field label="motoboys" ID="5" parentID="4">
+   <tuple> <atom label="Pizzaria$0"/> <atom label="Motoboy$6"/> </tuple>
+   <tuple> <atom label="Pizzaria$0"/> <atom label="Motoboy$8"/> </tuple>
+   <tuple> <atom label="Pizzaria$0"/> <atom label="Motoboy$13"/> </tuple>
+   <tuple> <atom label="Pizzaria$1"/> <atom label="Motoboy$5"/> </tuple>
+   <tuple> <atom label="Pizzaria$1"/> <atom label="Motoboy$7"/> </tuple>
+   <tuple> <atom label="Pizzaria$1"/> <atom label="Motoboy$10"/> </tuple>
+   <tuple> <atom label="Pizzaria$2"/> <atom label="Motoboy$4"/> </tuple>
+   <tuple> <atom label="Pizzaria$2"/> <atom label="Motoboy$11"/> </tuple>
+   <tuple> <atom label="Pizzaria$2"/> <atom label="Motoboy$14"/> </tuple>
+   <tuple> <atom label="Pizzaria$3"/> <atom label="Motoboy$2"/> </tuple>
+   <tuple> <atom label="Pizzaria$3"/> <atom label="Motoboy$3"/> </tuple>
+   <tuple> <atom label="Pizzaria$3"/> <atom label="Motoboy$12"/> </tuple>
+   <tuple> <atom label="Pizzaria$4"/> <atom label="Motoboy$0"/> </tuple>
+   <tuple> <atom label="Pizzaria$4"/> <atom label="Motoboy$1"/> </tuple>
+   <tuple> <atom label="Pizzaria$4"/> <atom label="Motoboy$9"/> </tuple>
+   <types> <type ID="4"/> <type ID="6"/> </types>
+</field>
+
+<sig label="this/Cliente" ID="7" parentID="2" some="yes">
+   <atom label="Cliente$0"/>
+   <atom label="Cliente$1"/>
+   <atom label="Cliente$2"/>
+   <atom label="Cliente$3"/>
+</sig>
+
+<field label="regiao" ID="8" parentID="7">
+   <tuple> <atom label="Cliente$0"/> <atom label="Centro$0"/> </tuple>
+   <tuple> <atom label="Cliente$1"/> <atom label="Centro$0"/> </tuple>
+   <tuple> <atom label="Cliente$2"/> <atom label="Oeste$0"/> </tuple>
+   <tuple> <atom label="Cliente$3"/> <atom label="Leste$0"/> </tuple>
+   <types> <type ID="7"/> <type ID="9"/> </types>
+</field>
+
+<sig label="this/Motoboy" ID="6" parentID="2">
+   <atom label="Motoboy$0"/>
+   <atom label="Motoboy$1"/>
+   <atom label="Motoboy$2"/>
+   <atom label="Motoboy$3"/>
+   <atom label="Motoboy$4"/>
+   <atom label="Motoboy$5"/>
+   <atom label="Motoboy$6"/>
+   <atom label="Motoboy$7"/>
+   <atom label="Motoboy$8"/>
+   <atom label="Motoboy$9"/>
+   <atom label="Motoboy$10"/>
+   <atom label="Motoboy$11"/>
+   <atom label="Motoboy$12"/>
+   <atom label="Motoboy$13"/>
+   <atom label="Motoboy$14"/>
+</sig>
+
+<field label="regiao" ID="10" parentID="6">
+   <tuple> <atom label="Motoboy$0"/> <atom label="Centro$0"/> </tuple>
+   <tuple> <atom label="Motoboy$1"/> <atom label="Centro$0"/> </tuple>
+   <tuple> <atom label="Motoboy$2"/> <atom label="Leste$0"/> </tuple>
+   <tuple> <atom label="Motoboy$3"/> <atom label="Leste$0"/> </tuple>
+   <tuple> <atom label="Motoboy$4"/> <atom label="Norte$0"/> </tuple>
+   <tuple> <atom label="Motoboy$5"/> <atom label="Oeste$0"/> </tuple>
+   <tuple> <atom label="Motoboy$6"/> <atom label="Sul$0"/> </tuple>
+   <tuple> <atom label="Motoboy$7"/> <atom label="Oeste$0"/> </tuple>
+   <tuple> <atom label="Motoboy$8"/> <atom label="Sul$0"/> </tuple>
+   <tuple> <atom label="Motoboy$9"/> <atom label="Centro$0"/> </tuple>
+   <tuple> <atom label="Motoboy$10"/> <atom label="Oeste$0"/> </tuple>
+   <tuple> <atom label="Motoboy$11"/> <atom label="Norte$0"/> </tuple>
+   <tuple> <atom label="Motoboy$12"/> <atom label="Leste$0"/> </tuple>
+   <tuple> <atom label="Motoboy$13"/> <atom label="Sul$0"/> </tuple>
+   <tuple> <atom label="Motoboy$14"/> <atom label="Norte$0"/> </tuple>
+   <types> <type ID="6"/> <type ID="9"/> </types>
+</field>
+
+<field label="numCadastro" ID="11" parentID="6">
+   <tuple> <atom label="Motoboy$0"/> <atom label="NumCadastro$14"/> </tuple>
+   <tuple> <atom label="Motoboy$1"/> <atom label="NumCadastro$13"/> </tuple>
+   <tuple> <atom label="Motoboy$2"/> <atom label="NumCadastro$12"/> </tuple>
+   <tuple> <atom label="Motoboy$3"/> <atom label="NumCadastro$11"/> </tuple>
+   <tuple> <atom label="Motoboy$4"/> <atom label="NumCadastro$10"/> </tuple>
+   <tuple> <atom label="Motoboy$5"/> <atom label="NumCadastro$9"/> </tuple>
+   <tuple> <atom label="Motoboy$6"/> <atom label="NumCadastro$8"/> </tuple>
+   <tuple> <atom label="Motoboy$7"/> <atom label="NumCadastro$7"/> </tuple>
+   <tuple> <atom label="Motoboy$8"/> <atom label="NumCadastro$6"/> </tuple>
+   <tuple> <atom label="Motoboy$9"/> <atom label="NumCadastro$5"/> </tuple>
+   <tuple> <atom label="Motoboy$10"/> <atom label="NumCadastro$4"/> </tuple>
+   <tuple> <atom label="Motoboy$11"/> <atom label="NumCadastro$3"/> </tuple>
+   <tuple> <atom label="Motoboy$12"/> <atom label="NumCadastro$2"/> </tuple>
+   <tuple> <atom label="Motoboy$13"/> <atom label="NumCadastro$1"/> </tuple>
+   <tuple> <atom label="Motoboy$14"/> <atom label="NumCadastro$0"/> </tuple>
+   <types> <type ID="6"/> <type ID="12"/> </types>
+</field>
+
+<sig label="this/NumCadastro" ID="12" parentID="2">
+   <atom label="NumCadastro$0"/>
+   <atom label="NumCadastro$1"/>
+   <atom label="NumCadastro$2"/>
+   <atom label="NumCadastro$3"/>
+   <atom label="NumCadastro$4"/>
+   <atom label="NumCadastro$5"/>
+   <atom label="NumCadastro$6"/>
+   <atom label="NumCadastro$7"/>
+   <atom label="NumCadastro$8"/>
+   <atom label="NumCadastro$9"/>
+   <atom label="NumCadastro$10"/>
+   <atom label="NumCadastro$11"/>
+   <atom label="NumCadastro$12"/>
+   <atom label="NumCadastro$13"/>
+   <atom label="NumCadastro$14"/>
+</sig>
+
+<sig label="this/Norte" ID="13" parentID="9" one="yes">
+   <atom label="Norte$0"/>
+</sig>
+
+<sig label="this/Sul" ID="14" parentID="9" one="yes">
+   <atom label="Sul$0"/>
+</sig>
+
+<sig label="this/Leste" ID="15" parentID="9" one="yes">
+   <atom label="Leste$0"/>
+</sig>
+
+<sig label="this/Oeste" ID="16" parentID="9" one="yes">
+   <atom label="Oeste$0"/>
+</sig>
+
+<sig label="this/Centro" ID="17" parentID="9" one="yes">
+   <atom label="Centro$0"/>
+</sig>
+
+<sig label="this/Regiao" ID="9" parentID="2" abstract="yes">
+</sig>
+
+<field label="pizzaria" ID="18" parentID="9">
+   <tuple> <atom label="Norte$0"/> <atom label="Pizzaria$2"/> </tuple>
+   <tuple> <atom label="Sul$0"/> <atom label="Pizzaria$0"/> </tuple>
+   <tuple> <atom label="Leste$0"/> <atom label="Pizzaria$3"/> </tuple>
+   <tuple> <atom label="Oeste$0"/> <atom label="Pizzaria$1"/> </tuple>
+   <tuple> <atom label="Centro$0"/> <atom label="Pizzaria$4"/> </tuple>
+   <types> <type ID="9"/> <type ID="4"/> </types>
+</field>
+
+<sig label="this/CentralAtendimento" ID="19" parentID="2" one="yes">
+   <atom label="CentralAtendimento$0"/>
+</sig>
+
+<field label="emDelivery" ID="20" parentID="19">
+   <tuple> <atom label="CentralAtendimento$0"/> <atom label="Motoboy$13"/> </tuple>
+   <tuple> <atom label="CentralAtendimento$0"/> <atom label="Motoboy$14"/> </tuple>
+   <types> <type ID="19"/> <type ID="6"/> </types>
+</field>
+
+<field label="listaDeEspera" ID="21" parentID="19">
+   <types> <type ID="19"/> <type ID="7"/> </types>
+</field>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+</instance>
+
+</alloy>
