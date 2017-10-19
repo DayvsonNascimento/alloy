@@ -51,7 +51,8 @@ public class ExampleUsingTheAPI {
 				ans.writeXML("Sample/instance.xml");
 				JMenu menuFile = new JMenu("File");
 				VizGUI viz = new VizGUI(false, "Sample/instance.xml", menuFile);
-
+				viz.loadThemeFile("Sample/theme.thm");
+			
 			}
 
 		} catch (Err e) {

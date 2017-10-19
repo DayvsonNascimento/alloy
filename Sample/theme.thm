@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view nodetheme="Martha">
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="Conta"/>
+   <type name="Int"/>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="seq/Int"/>
+</node>
+
+<node shape="Diamond" color="Blue">
+   <type name="ContaPoupanca"/>
+</node>
+
+<node shape="Ellipse" color="Yellow">
+   <type name="Banco"/>
+</node>
+
+<node shape="Parallelogram" color="Green">
+   <type name="ContaCorrente"/>
+</node>
+
+<edge label="">
+   <relation name="contas"> <type name="Banco"/> <type name="Conta"/> </relation>
+</edge>
+
+</view>
+
+</alloy>
