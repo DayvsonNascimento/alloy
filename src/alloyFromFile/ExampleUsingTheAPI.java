@@ -47,7 +47,7 @@ public class ExampleUsingTheAPI {
 			System.out.println("============ Command: " + command + ": ============");
 			A4Solution ans = TranslateAlloyToKodkod.execute_commandFromBook(rep, loaded.getAllReachableSigs(), command,
 					options);
-			while(ans.satisfiable()) {
+			if(ans.satisfiable()) {
 				ans.writeXML("Sample/instance.xml");
 				JMenu menuFile = new JMenu("File");
 				VizGUI viz = new VizGUI(false, "Sample/instance.xml", menuFile);
@@ -65,8 +65,7 @@ public class ExampleUsingTheAPI {
 		for (Pair<String, Expr> exp : loaded.getAllFacts()) {
 			expr = exp.b;
 		}
-		System.out.println(expr.toString());
-		return new Command(false, 15, 3, 3, expr);
+		return new Command(false, 3, 3, 3, expr);
 	}
 
 	public static void main(String[] args) {
