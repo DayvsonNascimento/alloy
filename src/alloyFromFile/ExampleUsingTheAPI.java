@@ -19,6 +19,10 @@ import edu.mit.csail.sdg.alloy4viz.VizGUI;
 
 public class ExampleUsingTheAPI {
 
+	
+	/*
+	 * loads module from the desired file, calls the method to show the solutions
+	 */
 	public static void loadModule(String chosenFile) {
 
 		A4Reporter rep = new A4Reporter();
@@ -30,6 +34,10 @@ public class ExampleUsingTheAPI {
 		}
 	}
 
+	
+	/*
+	 * opens a dialog box to select the file
+	 */
 	public static String openDialog() {
 
 		JFileChooser chooser = new JFileChooser();
@@ -37,11 +45,14 @@ public class ExampleUsingTheAPI {
 		return chooser.getSelectedFile().getAbsolutePath();
 	}
 
+	/*
+	 * runs the commands and show a graphical representation of the solution if  satisfiable
+	 */
 	public static void showSolutions(A4Reporter rep, CompModule loaded) {
 
 		A4Options options = new A4Options();
 		options.solver = A4Options.SatSolver.SAT4J;
-
+		
 		try {
 			Command command = makeCommand(loaded);
 			System.out.println("============ Command: " + command + ": ============");
@@ -51,7 +62,7 @@ public class ExampleUsingTheAPI {
 				ans.writeXML("Sample/instance.xml");
 				JMenu menuFile = new JMenu("File");
 				VizGUI viz = new VizGUI(false, "Sample/instance.xml", menuFile);
-				viz.loadThemeFile("Sample/theme.thm");
+				
 			
 			}
 
@@ -61,14 +72,19 @@ public class ExampleUsingTheAPI {
 
 	}
 
+
+	/*
+	 * makes a default run command for the alloy specification
+	 */
 	public static Command makeCommand(CompModule loaded) throws ErrorSyntax {
-		Expr expr = null;
-		for (Pair<String, Expr> exp : loaded.getAllFacts()) {
-			expr = exp.b;
-		}
+		Expr expr = loaded.getAllReachableFacts();
 		return new Command(false, 3, 3, 3, expr);
 	}
 
+	
+	/*
+	 * simple main method to test the methods
+	 */
 	public static void main(String[] args) {
 		String chosenFile = openDialog();
 		loadModule(chosenFile);
