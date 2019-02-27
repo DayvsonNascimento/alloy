@@ -1,3 +1,2 @@
-Simple example using Alloy API. 
+Simple example using Alloy API for java. 
 
-Basically, loads a desired specification made in Alloy and runs some basic commands, displaying the output graphically.
