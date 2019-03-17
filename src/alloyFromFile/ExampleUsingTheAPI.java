@@ -17,7 +17,7 @@ import edu.mit.csail.sdg.alloy4viz.VizGUI;
 public class ExampleUsingTheAPI {
 
 	/*
-	 * loads module from the desired file, calls the method to show the solutions
+	 * load module from the desired file, calls the method to show the solutions
 	 */
 	public static void loadModule(String chosenFile) {
 
@@ -33,7 +33,7 @@ public class ExampleUsingTheAPI {
 	}
 
 	/*
-	 * opens a dialog box to select the file
+	 * open a dialog box to select the file
 	 */
 	public static String openDialog() {
 
@@ -64,7 +64,7 @@ public class ExampleUsingTheAPI {
 	}
 
 	/*
-	 * shows a representation using VizGUI for the model only if it's satisfiable
+	 * show a representation using VizGUI for the model, only if it's satisfiable
 	 * 
 	 */
 	public static void showSolutions(A4Solution ans) {
@@ -81,7 +81,7 @@ public class ExampleUsingTheAPI {
 	}
 
 	/*
-	 * makes a default run command for the alloy specification
+	 * make a default run command for the alloy specification
 	 */
 	public static Command makeCommand(CompModule loaded) throws ErrorSyntax {
 		Expr expr = loaded.getAllReachableFacts();
@@ -89,7 +89,7 @@ public class ExampleUsingTheAPI {
 	}
 
 	/*
-	 * simple main method to test the methods
+	 * simple main method to test the implementation
 	 */
 	public static void main(String[] args) {
 		String chosenFile = openDialog();
